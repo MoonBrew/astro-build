@@ -90,8 +90,3 @@ runs:
       shell: "bash"
       working-directory: ${{ inputs.path }}
       run: $PACKAGE_MANAGER run build
-
-    - name: Upload Pages Artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: "${{ inputs.path }}/dist/"
